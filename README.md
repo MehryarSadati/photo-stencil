@@ -11,7 +11,6 @@ This repository contains a **simple** Python script that converts images into st
 ### ⚠️ Important Notes  
 - **This is a very simple project**—results may not be perfect and might require manual touch-ups in an image editor (e.g., cleaning up edges, adjusting contrast).  
 - **I strongly believe in supporting real artists.** This tool is intended for minor, non-commercial use only—such as personal crafts, quick prototypes, or educational purposes. If you need professional-quality artwork, **please commission an actual artist** instead of relying on automated tools.  
-- **Fine-line tattoos?** While this could work as a base for simple tattoo designs, always consult a professional tattoo artist for refinements and proper adaptation to skin.  
 
 ### ❓ When to Use This  
 - You need a quick placeholder for a project.  
@@ -27,16 +26,11 @@ This repository contains a **simple** Python script that converts images into st
 - **GUI Version**: A more user-friendly interface is in the works for those who prefer not to use the command line.  
 
 ## 🛠 Installation & Usage  
-1. Clone the repo:  
-   ```bash  
-   git clone https://github.com/MehryarSadati/photo-stencil.git  
-   cd photo-stencil  
-   ```  
-2. Install dependencies (OpenCV, NumPy, Pillow):  
+1. Install dependencies (OpenCV, NumPy, Pillow):  
    ```bash  
    pip install opencv-python numpy pillow 
    ```  
-3. Run the script:  
+2. Run the script:  
    ```bash  
    python stencil_generator.py --input your_image.jpg --output stencil_result.png  
    ```  
