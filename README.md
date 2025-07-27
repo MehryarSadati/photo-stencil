@@ -17,7 +17,7 @@ This repository contains a **simple** Python script that converts images into st
    ```  
 2. Run the script:  
    ```bash  
-   python stencil_generator.py --input your_image.jpg --output stencil_result.png  
+   python stencil.py --input your_image.jpg --output stencil_result.png  
    ```  
 
 **Remember: Automation is no substitute for human creativity. Support artists whenever possible!** 
