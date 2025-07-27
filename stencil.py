@@ -1,8 +1,15 @@
 from PIL import Image, ImageOps
 import numpy as np
 import cv2
+import argparse
 
-image_path = "photo.jpg"
+parser = argparse.ArgumentParser(description="Process an image to create a stencil.")
+parser.add_argument('--input', type=str, required=True, help='Path to the input image')
+parser.add_argument('--output', type=str, required=True, help='Path to save the output image')
+
+args = parser.parse_args()
+
+image_path = args.input
 image = Image.open(image_path)
 
 gray_image = ImageOps.grayscale(image)
@@ -16,5 +23,5 @@ edges_image = Image.fromarray(edges)
 
 stencil_image = ImageOps.invert(edges_image)
 
-stencil_image.save("photo_stencil.png")
+output_path = args.output
 stencil_image.show()
