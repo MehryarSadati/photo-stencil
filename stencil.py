@@ -4,8 +4,10 @@ import cv2
 import argparse
 
 parser = argparse.ArgumentParser(description="Process an image to create a stencil.")
-parser.add_argument('--input', type=str, required=True, help='Path to the input image')
-parser.add_argument('--output', type=str, required=True, help='Path to save the output image')
+parser.add_argument("--input", type=str, required=True, help="Path to the input image")
+parser.add_argument(
+    "--output", type=str, required=True, help="Path to save the output image"
+)
 
 args = parser.parse_args()
 
